@@ -1,5 +1,7 @@
 .container {
   border-radius: 4px;
-  background-color: #181818;
+  background-color: #141414;
   padding: 32px;
+  position: relative;
+  z-index: 100;
 }

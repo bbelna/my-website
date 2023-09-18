@@ -1,5 +1,16 @@
+<ng-particles
+  [id]="id"
+  [options]="particlesOptions"
+  [particlesInit]="particlesInit"
+  (particlesLoaded)="particlesLoaded($event)"
+></ng-particles>
+
 <div class="card-container">
   <app-container>
-    Test
+    <div class="center-text">
+      Brandon Alex Belna<br>
+      <span style="font-size: small">Senior Software Engineer @ ClearlyAgile</span><br><br>
+      Welcome to my website!
+    </div>
   </app-container>
 </div>

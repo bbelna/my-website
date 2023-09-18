@@ -12,10 +12,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from 'src/app/components/landing/landing.component';
 import { ContainerComponent } from 'src/app/components/container/container.component';
+import { NgParticlesModule } from 'ng-particles';
 
 const MATERIAL_IMPORTS = [
   MatCardModule,
   MatToolbarModule
+];
+
+const MISC_IMPORTS = [
+  NgParticlesModule
 ];
 
 const COMPONENTS = [
@@ -30,7 +35,8 @@ const COMPONENTS = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ...MATERIAL_IMPORTS
+    ...MATERIAL_IMPORTS,
+    ...MISC_IMPORTS
   ],
   providers: [],
   bootstrap: [AppComponent]

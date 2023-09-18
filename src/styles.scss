@@ -19,4 +19,13 @@ $my-website-theme: mat.define-dark-theme((
 @include mat.all-component-themes($my-website-theme);
 
 // html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: white; background-color: rgb(41, 41, 41); }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.center-text {
+  text-align: center;
+}
