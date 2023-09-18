@@ -1,16 +1,27 @@
+// Angular/Core
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Material
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+// Application
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from 'src/app/components/landing/landing.component';
-import { HeaderComponent } from 'src/app/components/header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContainerComponent } from 'src/app/components/container/container.component';
+
+const MATERIAL_IMPORTS = [
+  MatCardModule,
+  MatToolbarModule
+];
 
 const COMPONENTS = [
   AppComponent,
   LandingComponent,
-  HeaderComponent
+  ContainerComponent
 ];
 
 @NgModule({
@@ -18,7 +29,8 @@ const COMPONENTS = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ...MATERIAL_IMPORTS
   ],
   providers: [],
   bootstrap: [AppComponent]
